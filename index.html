@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zafer Portfolio</title>
+    <link rel='stylesheet' href='CSS/mystyle.css'>
+    <link rel='stylesheet' href='CSS/responsive.css'>
+</head>
+<body>
+    <button id="theme-switch" aria-label="Toggle dark mode">
+      <img src="images/darkmode.png" height="24" alt="Dark mode icon">
+      <img src="images/lightmode.png" height="24" alt="Light mode icon">
+    </button>
+
+    <header>
+        <nav id="desktop-nav">
+                <div class="logo">Zafer</div>
+                <div>
+                  <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+          </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Zafer</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section id="profile">
+        <div class="profile-container">
+          <img class="profile-img" src="images/Jonny.jpg" alt="Zafer profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Zafer Albunni</h1>
+          <p class="section__text__p2">Beginner Developer</p>
+        </div>
+      </section>
+
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="aboutmain">
+              <div class="aboutcard">
+                    <img src="images/Education.png" alt="Education icon">
+                    <h3>Education</h3>
+                    <div class="aboutdetails">
+                    <p>Syrian Virtual University</p>
+                    <p>Marketing</p>
+                    </div>
+                </div>
+    
+                <div class="aboutcard">
+                    <img src="images/Certificate.png" alt="Certificate icon">
+                    <h3>Certificates</h3>
+                    <div class="aboutdetails">
+                    <p>HTML/CSS/JS</p>
+                    <p>Alamen</p>
+                    </div>
+                </div>
+              <p class="section__text__description">
+                Passionate about learning web development and leveraging data to solve problems. My background in Business Administration provides a unique perspective on understanding project requirements and delivering user-centric solutions. I am eager to apply my growing skills in HTML, CSS, JavaScript, and data analysis to create impactful web experiences.
+              </p>
+        </div>
+    </section>
+
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="Skillsmain">
+              <div class="skillscard">
+                  <img src="images/accounting.svg" alt="Accounting icon">
+                  <h3>Accounting</h3>
+                  <div class="skillsdetails">
+                    <p>Alamen</p>
+                    <p>Excel</p>
+                  </div>
+              </div>
+  
+              <div class="skillscard">
+                  <img src="images/dataentry.png" alt="Data entry icon">
+                  <h3>Data Analysis</h3>
+                  <div class="skillsdetails">
+                    <p>Excel & Google Sheets</p>
+                    <p>Data visualization</p>
+                  </div>
+              </div>
+  
+              <div class="skillscard">
+                  <img src="images/translation.png" alt="Translation icon">
+                  <h3>Translation</h3>
+                  <div class="skillsdetails">
+                    <p>Arabic ↔ English</p>
+                    <p>Business documents</p>
+                  </div>
+              </div>
+        </div>
+      </section>
+
+      
+    <section id="projects">
+      <h1 class="title">My Projects</h1>
+      <div class="projects-container">
+          <div class="project-card">
+              <img class="project-img lazy" src="images/placeholder.jpg" data-src="images/project1-thumbnail.jpg" alt="Project 1 thumbnail">
+              <h3>Project Title 1: Interactive Calculator</h3>
+              <p>A web-based calculator built with HTML, CSS, and JavaScript. Features basic arithmetic operations and a clean user interface.</p>
+              <div class="project-links">
+                  <a href="link-to-live-demo.com" target="_blank" class="btn btn-color-1">Live Demo</a>
+                  <a href="link-to-github-repo.com" target="_blank" class="btn btn-color-2">GitHub</a>
+              </div>
+          </div>
+
+          <div class="project-card">
+              <img class="project-img lazy" src="images/placeholder.jpg" data-src="images/project2-thumbnail.jpg" alt="Project 2 thumbnail">
+              <h3>Project Title 2: To-Do List App</h3>
+              <p>A simple yet functional to-do list application, allowing users to add, delete, and mark tasks as complete. Stores data in local storage.</p>
+              <div class="project-links">
+                  <a href="link-to-live-demo.com" target="_blank" class="btn btn-color-1">Live Demo</a>
+                  <a href="link-to-github-repo.com" target="_blank" class="btn btn-color-2">GitHub</a>
+              </div>
+          </div>
+
+          <div class="project-card">
+              <img class="project-img lazy" src="images/placeholder.jpg" data-src="images/project3-thumbnail.jpg" alt="Project 3 thumbnail">
+              <h3>Project Title 3: Data Visualization Dashboard</h3>
+              <p>An interactive dashboard displaying key insights from a public dataset, built using HTML, CSS, and D3.js (or any library you used).</p>
+              <div class="project-links">
+                  <a href="link-to-live-demo.com" target="_blank" class="btn btn-color-1">Live Demo</a>
+                  <a href="link-to-github-repo.com" target="_blank" class="btn btn-color-2">GitHub</a>
+              </div>
+          </div>
+
+      </div>
+  </section>
+
+
+
+  <section id="contact">
+    <p class="section__text__p1 contact-heading">You Can <span class="highlight-text">Contact Me</span> in:</p> <div class="social">
+        <a href="mailto:albunnizafer@gmail.com" class="social-button Email" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://t.me/AlbunniZafer" class="social-button Telegram" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
+        <a href="https://www.facebook.com/zafer.albunni" class="social-button facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://wa.me/qr/6IJQYIXBVE2VB1" class="social-button Whatsapp" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+</section>
+
+    <button id="scrollToTopBtn" aria-label="Scroll to top">&#8593;</button>
+    <script type="text/javascript" src="script.js" defer></script>
+    </body>
+</html>
